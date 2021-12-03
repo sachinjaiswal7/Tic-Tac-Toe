@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6AC6EF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerOne_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-smallcaxps"
+        android:text="@string/player_1_s_turn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/four_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerTwo_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/player_2_s_turn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/four_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/one_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/two_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/four_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/four_text"
+        />
+
+    <TextView
+        android:id="@+id/two_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:textSize="50sp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/five_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/one_text"
+        app:layout_constraintStart_toStartOf="@+id/one_text"
+        app:layout_constraintTop_toTopOf="@+id/eight" />
+
+    <TextView
+        android:id="@+id/three_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/five_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/two_text"
+        app:layout_constraintStart_toStartOf="@+id/two_text"
+        app:layout_constraintTop_toTopOf="@+id/five_text" />
+
+    <TextView
+        android:id="@+id/four_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textSize="50sp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/six_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/seven_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/one_text"
+        app:layout_constraintTop_toTopOf="@+id/seven_text" />
+
+    <TextView
+        android:id="@+id/five_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/nine_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/six_text"
+        app:layout_constraintStart_toStartOf="@+id/six_text"
+        app:layout_constraintTop_toTopOf="@+id/nine_text" />
+
+    <TextView
+        android:id="@+id/six_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+
+        android:background="@color/black"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/two_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/four_text"
+        app:layout_constraintStart_toStartOf="@+id/four_text"
+        app:layout_constraintTop_toTopOf="@+id/two_text" />
+
+    <TextView
+        android:id="@+id/seven_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/eight"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/four_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/nine_text"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/seven_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/seven_text"
+        app:layout_constraintTop_toBottomOf="@+id/seven_text" />
+
+    <TextView
+        android:id="@+id/nine_text"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/eight"
+        app:layout_constraintStart_toStartOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
